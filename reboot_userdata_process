@@ -1,0 +1,17 @@
+##USERDATA— bros info
+##reboot userdata process==
+
+1 stop ec2
+
+2 ACTION—INSTANCE SETTING—EDIT USERDATA - ADD NEW USERDATA / GIVE TEXTFILEWITH USERDATA --keep 5 lines fix upto runcmd as it is
+
+#cloud-config
+cloud_final_modules:
+  - [scripts-user, always]     
+
+runcmd:
+  - sudo apt update -y
+  - sudo apt install docker.io -y
+
+##ADD NEW COMMANDS WITH - DASH IN START
+##- [scripts-user, always]     == each reboot run this userdata
