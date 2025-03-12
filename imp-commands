@@ -1,0 +1,2 @@
+kill -9 7911           correct process
+kill 7911              wrong
