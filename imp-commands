@@ -1,2 +1,5 @@
-kill -9 7911           correct process
-kill 7911              wrong
+CORRECT                                                                                         WRONG                     forget
+
+kill -9 7911                                                                                   kill 7911                   -9              
+
+lsof -i :8080                                                                                  lsof -i 8080                 :
