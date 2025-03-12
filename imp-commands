@@ -3,3 +3,5 @@ CORRECT                                                                         
 kill -9 7911                                                                                   kill 7911                   -9              
 
 lsof -i :8080                                                                                  lsof -i 8080                 :
+
+systemctl status jenkins                                                                      
