@@ -1,3 +1,65 @@
+# Basic System Information:
+uname -a           # Kernel information
+lsb_release -a     # Distribution information (if available)
+cat /etc/os-release # More detailed OS information
+hostname           # System hostname
+uptime             # System uptime and load averages
+free -h            # Memory usage
+df -h              # Disk space usage
+du -sh /path/to/dir # Disk usage of a directory
+top                # Real-time process monitoring
+htop               # Improved interactive process monitor (install separately)
+ps aux             # List all running processes
+ps aux | grep process_name # Find specific processes
+lsof -i :port_number # List processes using a specific port
+netstat -tuln       # List listening ports
+ss -tuln           # Another way to list listening ports (faster than netstat)
+ip a               # Show network interfaces and IP addresses
+ip route           # Show routing table
+ping google.com    # Test network connectivity
+traceroute google.com # Trace network route
+dig google.com     # DNS lookup
+nslookup google.com # Another DNS lookup tool
+curl -I google.com # Get HTTP headers
+wget URL           # Download files
+ssh user@host      # Secure shell login
+scp file user@host:/path # Secure copy files
+
+# File Manipulation:
+ls -l              # List files with detailed information
+ls -a              # List all files, including hidden files
+cd /path/to/dir   # Change directory
+pwd                # Print working directory
+mkdir directory_name # Create a directory
+rm file_name       # Remove a file
+rm -rf directory_name # Remove a directory recursively (be careful!)
+cp source destination # Copy files or directories
+mv source destination # Move or rename files or directories
+cat file_name      # Display file contents
+less file_name     # View file contents page by page
+head file_name     # Display the first few lines of a file
+tail file_name     # Display the last few lines of a file
+tail -f file_name  # Follow file changes in real-time
+grep "pattern" file_name # Search for a pattern in a file
+sed 's/old/new/g' file_name # Replace text in a file
+awk '{print $1}' file_name # Process text files
+find /path -name "file_name" # Find files by name
+find /path -type d # Find directories
+tar -czvf archive.tar.gz directory_name # Compress a directory
+tar -xzvf archive.tar.gz # Extract a tar.gz archive
+zip archive.zip files... # Zip files
+unzip archive.zip # Unzip files
+chmod +x script.sh # Make a script executable
+chown user:group file_name # Change file ownership
+
+# Package Management (Debian/Ubuntu):
+sudo apt update     # Update package lists
+sudo apt upgrade   # Upgrade installed packages
+sudo apt install package_name # Install a package
+sudo apt remove package_name # Remove a package
+sudo apt autoremove #
+
+
 CORRECT                                                                                         WRONG                     forget
 
 kill -9 7911                                                                                   kill 7911                   -9              
